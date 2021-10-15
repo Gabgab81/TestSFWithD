@@ -1,0 +1,8 @@
+<h1>All adverts</h1>
+<% @advert.each do |advert| %>
+  <li class="list-group-item"><%= advert.title %></li>
+  <li class="list-group-item"><%= advert.type_ad %></li>
+  <li class="list-group-item"><%= advert.content %></li>
+  <li class="list-group-item"><%= advert.id %></li>
+  <li class="list-group-item"><%= advert.user_id %></li>
+<% end %>
